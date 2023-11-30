@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\NovaPasta1\**" />
+    <Content Remove="wwwroot\NovaPasta1\**" />
+    <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
+    <None Remove="wwwroot\NovaPasta1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastReport.OpenSource" Version="2023.3.5" />
+    <PackageReference Include="FastReport.OpenSource.Data.MsSql" Version="2021.4.0" />
+    <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2023.3.5" />
+    <PackageReference Include="FastReport.OpenSource.Web" Version="2023.3.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="ReflectionIT.Mvc.Paging" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Services\" />
+    <Folder Include="wwwroot\images\produtos\" />
+    <Folder Include="wwwroot\reports\" />
+  </ItemGroup>
+
+</Project>
